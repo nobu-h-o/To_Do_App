@@ -1,7 +1,7 @@
 import Task from './Task.tsx';
 import { type Task as task } from '../App.tsx';
 
-type CourseTaskListProps = {
+type TaskListProps = {
   tasks: task[];
   onDeleteTask: (id: number) => void;
 };
@@ -9,7 +9,7 @@ type CourseTaskListProps = {
 export default function TaskList({
   tasks,
   onDeleteTask,
-}: CourseTaskListProps) {
+}: TaskListProps) {
   return (
     <ul>
       {tasks.map((task) => (
